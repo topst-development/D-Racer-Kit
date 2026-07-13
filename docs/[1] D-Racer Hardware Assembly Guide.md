@@ -23,17 +23,18 @@ D-Racer 키트를 구성하는 부품 리스트와 실물 이미지는 Table 1, 
     </tr>
   </thead>
   <tbody>
-    <tr><td align="center">1</td><td>D3-G (8GB/32GB)</td><td align="center">12</td><td>WiFi Dongle</td></tr>
-    <tr><td align="center">2</td><td>Battery Module Board (*Waveshare)</td><td align="center">13</td><td>USB Camera</td></tr>
-    <tr><td align="center">3</td><td>D3-G Board Plate</td><td align="center">14</td><td>Camera Support Bolt</td></tr>
-    <tr><td align="center">4</td><td>I2C Interface Board</td><td align="center">15</td><td>Jumper Wire (Female-Female)</td></tr>
-    <tr><td align="center">5</td><td>Front Support</td><td align="center">16</td><td>M3.0 Bolt (Length: 60mm)</td></tr>
-    <tr><td align="center">6</td><td>USB-Hub Box</td><td align="center">17</td><td>M2.5 Bolt (Length: 55mm)</td></tr>
-    <tr><td align="center">7</td><td>Rear Support</td><td align="center">18</td><td>M2.5 Bolt (Length: 25mm)</td></tr>
-    <tr><td align="center">8</td><td>Nylon Support (*Waveshare)</td><td align="center">19</td><td>M2.5 Bolt (Length: 3mm)</td></tr>
-    <tr><td align="center">9</td><td>Power Adaptor (*Waveshare)</td><td align="center">20</td><td>18650 Battery</td></tr>
-    <tr><td align="center">10</td><td>Power Plug</td><td align="center">21</td><td>Vehicle Chassis (*Waveshare)</td></tr>
-    <tr><td align="center">11</td><td>USB-Hub</td><td align="center">22</td><td>Joystick (*Waveshare)</td></tr>
+    <tr><td align="center">1</td><td>D3-G (8GB/32GB)</td><td align="center">13</td><td>USB C-to-A Cable</td></tr>
+    <tr><td align="center">2</td><td>Battery Module Board (*Waveshare)</td><td align="center">14</td><td>Web Camera</td></tr>
+    <tr><td align="center">3</td><td>D3-G Board Plate</td><td align="center">15</td><td>Camera Support</td></tr>
+    <tr><td align="center">4</td><td>I2C Interface Board</td><td align="center">16</td><td>Jumper Wire (F/F)</td></tr>
+    <tr><td align="center">5</td><td>Front Support</td><td align="center">17</td><td>Nylon Support (*Waveshare)</td></tr>
+    <tr><td align="center">6</td><td>USB-Hub Box</td><td align="center">18</td><td>M3.0 Bolt (Length: 60mm)</td></tr>
+    <tr><td align="center">7</td><td>Rear Support</td><td align="center">19</td><td>M2.5 Bolt (Length: 55mm)</td></tr>
+    <tr><td align="center">8</td><td>Power Adaptor (*Waveshare)</td><td align="center">20</td><td>M2.5 Bolt (Length: 25mm)</td></tr>
+    <tr><td align="center">9</td><td>Power Plug</td><td align="center">21</td><td>M2.5 Bolt (Length: 3mm)</td></tr>
+    <tr><td align="center">10</td><td>USB Hub</td><td align="center">22</td><td>18650 Battery</td></tr>
+    <tr><td align="center">11</td><td>WiFi Dongle</td><td align="center">23</td><td>Vehicle Chassis (*Waveshare)</td></tr>
+    <tr><td align="center">12</td><td>TTL-to-Serial Cable</td><td align="center">24</td><td>Joystick (*Waveshare)</td></tr>
   </tbody>
 </table>
 
@@ -46,7 +47,7 @@ D-Racer 키트를 구성하는 부품 리스트와 실물 이미지는 Table 1, 
 </p>
 
 
-D-Racer의 메인 보드인 D3-G의 사양(Specification)은 아래 table 2와 같습니다.
+D-Racer의 메인 보드인 D3-G의 사양(Specification)은 아래 Table 2와 같습니다.
 
 <p align="center">
   <b>Table 2. D3-G Specifications</b>
@@ -212,10 +213,11 @@ D-Racer의 부품별 조립 가이드입니다.
 
     <br>
 
-4. D-Racer-board-plate와 front-support, rear-support를 결착합니다. 사용되는 볼트는 `M2.5 55mm(수량:2)`, `M3.0 60mm(수량:2)`입니다. front-support 홀에는 `M2.5 볼트`를, rear-support 홀에는 `M3.0 볼트`를 결착합니다(Figure 7).
+4. D-Racer-board-plate와 front-support, rear-support를 결착합니다. 사용되는 볼트는 `M2.5 55mm(수량:2)`, `M3.0 60mm(수량:2)`입니다. front 쪽에는 `M2.5 볼트`와 front-support를 결합해주시고, rear쪽에는 `M3.0 볼트`와 rear-support를 결합해주세요(Figure 7).
+
 
     <p align="center">
-      <img src="https://raw.githubusercontent.com/topst-development/D-Racer-Kit/refs/heads/dev/docs/asset/1/figure7-supports-connection.png" alt="Supports Connection">
+      <img src="https://raw.githubusercontent.com/topst-development/D-Racer-Kit/refs/heads/dev/docs/asset/1/figure7-support-connection.png" alt="Supports Connection">
       <br>
       <b>Figure 7. Supports Connection</b>
     </p>
@@ -234,69 +236,74 @@ D-Racer의 부품별 조립 가이드입니다.
     <br>
 
 
+6. D-Racer I2C 인터페이스 보드에 `점퍼선(F/F, 수량:4)`을 연결합니다(Figure 9).
 
 
-6. 제공된 `나일론 지지대(수량:4)`를 이용해 (1) 전원 모듈 보드와 (2) D-Racer-board-plate를 결합합니다(Figure 9).
+    <p align="center">
+      <img src="https://raw.githubusercontent.com/topst-development/D-Racer-Kit/refs/heads/dev/docs/asset/1/figure9-interface-board-configuration.png" alt="I2C Interface Board">
+      <br>
+      <b>Figure 9. I2C Interface Board</b>
+    </p>
+
+    <br>
+
+7. D-Racer I2C 인터페이스 보드를 아래와 같이 배터리 모듈 보드에 결착시켜 주세요.(Figure 10)  
+    
+    <p align="center">
+        <img src="https://raw.githubusercontent.com/topst-development/D-Racer-Kit/refs/heads/dev/docs/asset/1/figure10-i2c-interface-board-assembly.png" alt="Chassis Assembly">
+        <br>
+        <b>Figure 10. I2C Interface Board Assembly</b>
+    </p>
+
+    <br>
+
+
+
+8. 제공된 `나일론 지지대(수량:4)`를 이용해 (1) 전원 모듈 보드와 (2) D-Racer-board-plate를 결합합니다(Figure 11).
+
     **이때 볼트를 너무 강하게 조이면 3D 플레이트가 파손될 수 있으므로, 적정 힘으로 장착해 주세요.**
 
     <p align="center">
-      <img src="https://raw.githubusercontent.com/topst-development/D-Racer-Kit/refs/heads/dev/docs/asset/1/figure9-chasis-assembly.png" alt="Chassis Assembly">
+      <img src="https://raw.githubusercontent.com/topst-development/D-Racer-Kit/refs/heads/dev/docs/asset/1/figure11-chassis-assembly.png" alt="Chassis Assembly">
       <br>
-      <b>Figure 9. Chassis Assembly</b>
+      <b>Figure 11. Chassis Assembly</b>
     </p>
 
     <br>
 
-7. D-Racer-board-plate 위에 D3-G를 장착합니다. 사용되는 볼트는 `M2.5 3mm(수량:2)`입니다(Figure 10).
+9. D-Racer-board-plate 위에 D3-G를 장착합니다. 사용되는 볼트는 `M2.5 3mm(수량:2)`입니다(Figure 12).
 
     <p align="center">
-      <img src="https://raw.githubusercontent.com/topst-development/D-Racer-Kit/refs/heads/dev/docs/asset/1/figure10-mounting-d3-g.png" alt="Mounting D3-G">
+      <img src="https://raw.githubusercontent.com/topst-development/D-Racer-Kit/refs/heads/dev/docs/asset/1/figure12-mounting-d3-g.png" alt="Mounting D3-G">
       <br>
-      <b>Figure 10. Mounting D3-G</b>
+      <b>Figure 12. Mounting D3-G</b>
     </p>
 
     <br>
 
-8. 카메라를 D-Racer-board-plate 앞면에 위치시키고, `카메라 전용 나사(수량:1)`를 이용해 고정합니다(Figure 11).
+10. 카메라를 D-Racer-board-plate 앞면에 위치시키고, `카메라 전용 나사(수량:1)`를 이용해 고정합니다(Figure 13).
 
     <p align="center">
-      <img src="https://raw.githubusercontent.com/topst-development/D-Racer-Kit/refs/heads/dev/docs/asset/1/figure11-mounting-camera.png" alt="Mounting Camera">
+      <img src="https://raw.githubusercontent.com/topst-development/D-Racer-Kit/refs/heads/dev/docs/asset/1/figure13-mounting-camera.png" alt="Mounting Camera">
       <br>
-      <b>Figure 11. Mounting Camera</b>
+      <b>Figure 13. Mounting Camera</b>
     </p>
 
     <br>
 
-9. 카메라 USB 커넥터를 아래와 같이 부착합니다(Figure 12).
+11. 카메라 USB 커넥터를 아래와 같이 부착합니다(Figure 14).
 
     <p align="center">
-      <img src="https://raw.githubusercontent.com/topst-development/D-Racer-Kit/refs/heads/dev/docs/asset/1/figure12-camera-usb-connection.png" alt="Camera USB Connection">
+      <img src="https://raw.githubusercontent.com/topst-development/D-Racer-Kit/refs/heads/dev/docs/asset/1/figure14-camera-usb-connection.png" alt="Camera USB Connection">
       <br>
-      <b>Figure 12. Camera USB Connection</b>
+      <b>Figure 14. Camera USB Connection</b>
     </p>
 
     <br>
 
-10. D-Racer I2C 인터페이스 보드에 `점퍼선(Female/Female, 수량:4)`을 연결합니다(Figure 13).
 
-    <p align="center">
-      <img src="https://raw.githubusercontent.com/topst-development/D-Racer-Kit/refs/heads/dev/docs/asset/1/figure13-i2c-interface-board.png" alt="I2C Interface Board">
-      <br>
-      <b>Figure 13. I2C Interface Board</b>
-    </p>
 
-    <br>
 
-11. 제공된 D-Racer I2C 인터페이스 박스를 섀시 위 핀헤더에 연결합니다(Figure 14).
-    **이때 반드시 6개의 핀헤더가 모두 장착되어야 하므로, 옆에서 확인하면서 장착해 주세요.**
-
-    <p align="center">
-      <img src="https://raw.githubusercontent.com/topst-development/D-Racer-Kit/refs/heads/dev/docs/asset/1/figure14-i2c-interface-board-connection.png" alt="I2C Interface Board Connection">
-      <br>
-      <b>Figure 14. I2C Interface Board Connection</b>
-    </p>
-
-    <br>
 
 12. D3-G GPIO 핀맵에 대응하여 점퍼선을 연결합니다. 이때 반드시 I2C 인터페이스 보드의 3.3V, SDA, SCL, GND 라인을 보드의 GPIO 핀맵에 맞춰서 연결합니다. (Figure 15)
 
@@ -308,7 +315,7 @@ D-Racer의 부품별 조립 가이드입니다.
 
     <br>
 
-13. 배터리 충전용 케이블을 섀시 전원부에 연결한 뒤, 어댑터에 전원을 인가해 배터리를 충전합니다(Figure 16). 완충 시 어댑터 LED가 초록색으로 표시됩니다.
+13. 배터리 충전용 케이블을 섀시 전원부에 연결한 뒤, 어댑터에 전원을 인가해 배터리를 충전합니다(Figure 16). 완충 시 어댑터 LED가 초록색으로 표시됩니다. `(110V/220V 변환 어댑터 별도 구비)`
 
     <p align="center">
       <img src="https://raw.githubusercontent.com/topst-development/D-Racer-Kit/refs/heads/dev/docs/asset/1/figure16-charging-battery.png" alt="Charging Battery">
